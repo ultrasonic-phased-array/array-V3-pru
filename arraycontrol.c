@@ -205,7 +205,7 @@ int main (int argc, char ** argv)
 	pru0_command->command = 0xFF; // tell PRU0 to exit
 	while (pru0_command->response != 0xFF) {} // wait for PRU0 exit
 
-	printf("Otter: %d\n", pru0_command->response);
+	printf("Done with exit code: %d\n", pru0_command->response);
 
 	uninitialize_pru();
 	return(0);
